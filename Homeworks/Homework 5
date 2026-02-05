@@ -1,0 +1,66 @@
+using System;
+
+interface IDamageable{
+	void TakeDamage(int damage);
+}
+
+abstract class Character: IDamageable
+{
+	public string Name;
+	public int Health;
+	public abstract void Attack();
+	public void Move(){
+		Console.WriteLine("10 to right");
+	}
+	public void TakeDamage(int damage){
+		this.Health = this.Health - damage;
+	}
+}
+
+///Данный класс должен быть абстрактным, чтобы нельзя было создать объект класса Character
+
+class Warrior: Character, IDamageable{
+	public Warrior(string name, int health){
+		this.Name = name;
+		this.Health = health;
+	}
+	public override void Attack(){
+		Console.WriteLine("Warrior attack");
+	}
+}
+
+class Mage: Character, IDamageable{
+	public Mage(string name, int health){
+		this.Name = name;
+		this.Health = health;
+	}
+	public override void Attack(){
+		Console.WriteLine("Mage attack");
+	}
+}
+
+class Healer: Character, IDamageable{
+	public Healer(string name, int health){
+		this.Name = name;
+		this.Health = health;
+	}
+	public override void Attack(){
+		Console.WriteLine("Your health bar is full");
+	}
+}
+
+class Program
+{
+	public static void Main()
+	{	
+		string name = "name";
+		int health = 100;
+		Character []mas = {new Warrior(name, health), new Mage(name, health), new Healer(name, health)};
+		foreach (Character p in mas){
+			p.Attack();
+		}
+///Потому что вызов метода зависит от объекта, который его вызывает, и реализации полиморфизма через абстрактный класс.
+///В данном случае тип переменной отсылает к базовому классу, но т.к. метод Attack в нём абстрактный,
+///C# вызывает переопределённный метод в зависимости от того, объектом какого класса является p.
+	}
+}
