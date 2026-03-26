@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\oavla\\.nuget\\packages\\": {}
+    "C:\\Users\\BAZA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oavla\\Desktop\\Github\\Projects\\Project 2\\Program\\Project 2\\Project 2.csproj",
+      "projectUniqueName": "C:\\Users\\BAZA\\Documents\\MasterGambler\\Projects\\Project 2\\Program\\Project 2\\Project 2.csproj",
       "projectName": "Project 2",
-      "projectPath": "C:\\Users\\oavla\\Desktop\\Github\\Projects\\Project 2\\Program\\Project 2\\Project 2.csproj",
-      "packagesPath": "C:\\Users\\oavla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oavla\\Desktop\\Github\\Projects\\Project 2\\Program\\Project 2\\obj\\",
+      "projectPath": "C:\\Users\\BAZA\\Documents\\MasterGambler\\Projects\\Project 2\\Program\\Project 2\\Project 2.csproj",
+      "packagesPath": "C:\\Users\\BAZA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BAZA\\Documents\\MasterGambler\\Projects\\Project 2\\Program\\Project 2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oavla\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\BAZA\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -44,7 +44,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

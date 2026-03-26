@@ -1,66 +1,79 @@
 ﻿using System;
+using System.Collections.Generic;
 
-abstract class CommandBase
+//Основные классы
+class Game { }
+class GameState { }
+
+// Интерфейсы
+interface ICommand
 {
-    private string _command;
-    public string Command
-    {
-        get { return _command; }
-        set { _command = value; }
-    }
-    public virtual void Execute(string command)
-    {
-        Console.WriteLine(command);
-    }
+    string Execute(string args, Game game);
 }
 
-abstract class ConditionBase
+interface IInteractable
 {
-    private string _condition;
-    public string Condition
-    {
-        get { return _condition; }
-        set { _condition = value; }
-    }
-    public virtual void AddCondition(string condition)
-    {
-        Console.WriteLine(condition);
-    }
+    string Interact(GameState state);
 }
 
-abstract class EffectBase
+interface ICondition
 {
-    private string _effect;
-    public string Effect
+    bool Check(GameState state);
+}
+
+interface IEffect
+{
+    void Apply(GameState state);
+}
+
+// Абстрактные классы 
+abstract class CommandBase : ICommand
+{
+    private string _commandName;
+    public string CommandName
     {
-        get { return _effect; }
-        set { _effect = value; }
+        get { return _commandName; }
+        set { _commandName = value; }
     }
-    public virtual void Apply(string effect)
-    {
-        Console.WriteLine(effect);
-    }
+
+    public abstract string Execute(string args, Game game);
+}
+
+abstract class ConditionBase: ICondition
+{
+    public abstract bool Check(GameState state);
+}
+
+abstract class EffectBase: IEffect
+{
+    public abstract void Apply(GameState state);
 }
 
 abstract class GameEventBase
 {
-    private string _trigger;
-    private string[] _effects_list;
-    public string Trigger
+    private ICondition _condition;
+    private List<IEffect> _effects;
+
+    public ICondition Condition
     {
-        get { return _trigger; }
-        set { _trigger = value; }
+        get { return _condition; }
+        set { _condition = value; }
     }
-    public string[] Effects_list
+
+    public List<IEffect> Effects
     {
-        get { return _effects_list; }
-        set { _effects_list = value; }
+        get { return _effects; }
+        set { _effects = value; }
     }
-    public virtual void Check(string actual_trigger)
+
+    public void CheckAndApply(GameState state)
     {
-        if (actual_trigger == _trigger)
+        if (_condition != null && _condition.Check(state))
         {
-            Console.WriteLine(_effects_list);
+            foreach (IEffect effect in _effects)
+            {
+                effect.Apply(state);
+            }
         }
     }
 }
