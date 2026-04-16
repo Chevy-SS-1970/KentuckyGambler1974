@@ -3,3 +3,13 @@ C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\D
 C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\Project 2.AssemblyInfo.cs
 C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\Project 2.csproj.CoreCompileInputs.cache
 C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\Project 2.sourcelink.json
+c:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\bin\Debug\net9.0\Project 2.exe
+C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\bin\Debug\net9.0\Project 2.deps.json
+C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\bin\Debug\net9.0\Project 2.runtimeconfig.json
+c:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\bin\Debug\net9.0\Project 2.dll
+c:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\bin\Debug\net9.0\Project 2.pdb
+c:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\Project 2.dll
+c:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\refint\Project 2.dll
+c:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\Project 2.pdb
+C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\Project 2.genruntimeconfig.cache
+C:\Users\BAZA\Documents\MasterGambler\Projects\Project 2\Program\Project 2\obj\Debug\net9.0\ref\Project 2.dll
